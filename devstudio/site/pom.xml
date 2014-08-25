@@ -186,7 +186,7 @@
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>base</classifier>
+              <classifier>jbds-is</classifier>
             </artifact>
           </target>
         </configuration>

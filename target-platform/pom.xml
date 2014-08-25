@@ -260,12 +260,10 @@
             </goals>
 
             <configuration>
-              <tasks>
-                <echo>Package the target files.</echo>
-              </tasks>
+
               <artifacts>
                 <artifact>
-                  <file>${basedir}/jbds-is.target</file>
+                  <file>${project.build.directory}/jbds-is.target</file>
                   <type>target</type>
                   <classifier>jbds-is</classifier>
                 </artifact>
@@ -297,7 +295,7 @@
   <!-- Mirror just the jbt-is target dependencies (superset of jbds-is dependencies).  This will be used by the production build as an extra repo.  -->
   <profiles>
     <profile>
-      <id>isbtp2repo</id>
+      <id>mirror-jbt-is-target</id>
       <activation>
         <activeByDefault>false</activeByDefault>
       </activation>
