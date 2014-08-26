@@ -200,7 +200,7 @@
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>jbt-is-full</classifier>
+              <classifier>jbt-is</classifier>
             </artifact>
           </target>
         </configuration>
